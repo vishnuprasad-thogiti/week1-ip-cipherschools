@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>images and responsiveness in html</title>
+</head>
+<body>
+     <img src="image.jpg" alt=""
+    srcset="small.jpg 480w,
+            medium.jpg 800w,
+            large.jpg 1200w"
+    sizes="(max-width: 480px) 240px,
+            (max-width: 960px) 480px,
+            (max-width: 1440px) 960px"
+            >       
+
+    <picture>
+        <source media="(max-width:600px)"  srcset="image2.jpg">
+        <source media="(max-width: 900px)" srcset="image2.jpg">
+        <img src="image.jpg" alt="">
+
+    </picture>
+    <!--image mapping-->
+
+    <img src="th.jpg" alt="discord"  usemap="#discord">
+
+    <map name="discord">
+        <area shape="rect" coords="34,44,370,350" alt="computer" href="computer.html">
+        <area shape="rect" coords="290,172,333,250" href="phone.html" alt="phone" >
+        <area shape="circle" coords="337,300,44" alt="Cup" href="cup.html">
+    </map>
+
+</body>
+</html>
